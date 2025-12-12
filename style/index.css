@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kulen';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
+
+.gender-selection {
+    padding: 10px;
+}
+
+.gender-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 400px;
+    margin: auto;
+
+}
+
+.gender-card img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.gender-card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(255, 0, 183, 0.2);
+}
+
+.shop-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    border-radius: 1px;
+    border: 2px solid #000000;
+    padding: 10px 40px;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+.shop-button:hover {
+    color: #ffffff;
+    background-color: #ff0080;
+    border-color: #000000;
+}
+
+.product-drop {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.drop-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.flame-icon {
+    font-size: 1.5rem;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.product-card {
+    position: relative;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image-container {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.product-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.product-info {
+    flex-grow: 1;
+    padding: 5px 0;
+}
+
+.product-link,
+.product-name {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.product-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-link:hover .product-image-container img {
+    transform: scale(1.03);
+}
+
+.pricing-details {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.original-price {
+    color: #999999;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.discount-percentage {
+    color: #000000;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.sale-price {
+    color: #ff0080;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.bookmark-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: #000000;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 10;
+}
+
+.bookmark-btn:hover {
+    color: #ff0080;
+}
+
+.product-drop-smart {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* --- Section Title Styling --- */
+.drop-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000000;
+}
+
+/* --- Product Card Layout (Reusing styles from previous request for consistency) --- */
+.product-card {
+    position: relative;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.product-info {
+    flex-grow: 1;
+    padding: 5px 0;
+}
+
+.product-link,
+.product-name {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* --- Pricing Styling --- */
+.pricing-details {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.original-price {
+    color: #999999;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.discount-percentage {
+    color: #000000;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.sale-price {
+    color: #ff0080;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.product-variants {
+    display: flex;
+    gap: 8px;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px #fff;
+    transition: transform 0.2s;
+}
+
+.color-swatch.white {
+    background-color: #ffffff;
+}
+
+.color-swatch.pink {
+    background-color: #ff99cc;
+    border: 1px solid #ff99cc;
+}
+
+.color-swatch.gray {
+    background-color: #aaaaaa;
+}
+
+.color-swatch.active {
+    box-shadow: 0 0 0 2px #000000;
+}
+
+.color-swatch.active.white {
+    border: 1px solid #000000;
+}
+
+.bookmark-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: #000000;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 10;
+}
+
+.bookmark-btn:hover {
+    color: #ff0080;
+}
+
+.h {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767.98px) {
+    .drop-title {
+        font-size: 1.5rem;
+    }
+
+    .shop-button {
+        font-size: 1rem;
+        padding: 8px 30px;
+    }
+}

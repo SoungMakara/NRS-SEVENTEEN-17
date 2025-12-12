@@ -1,0 +1,180 @@
+/* --- Global Styles --- */
+body {
+    background-color: #ffffff;
+    /* White background */
+    font-family: Arial, sans-serif;
+}
+
+.product-page {
+    /* Ensures content doesn't get too wide on very large screens */
+    max-width: 1200px;
+}
+
+/* --- Price Section Styling --- */
+.price-section {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    color: #ff0000;
+    /* Red color for the price */
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.discount-text {
+    background-color: #ff0000;
+    /* Red background for discount */
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.original-price {
+    color: #999999;
+    /* Grey color for original price */
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    /* Strikethrough */
+}
+
+/* --- Headings and Titles --- */
+.product-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.section-heading {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* --- Image Gallery/Thumbnail Styling --- */
+/* Left thumbnails */
+.thumbnail-img-wrapper {
+    border: 1px solid #e0e0e0;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.thumbnail-img-wrapper.active {
+    border-color: #000000;
+    /* Darker border for active thumbnail */
+}
+
+/* Main image area */
+.main-image-wrapper {
+    position: relative;
+    /* Maintain aspect ratio */
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+.main-product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Important for showing the full image */
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+
+/* --- Color Selection Styling --- */
+.color-option-wrapper {
+    width: 100px;
+    /* Specific width for the color box */
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-option-wrapper.active {
+    border: 2px solid #000000;
+    /* Black border for active selection */
+    padding: 4px;
+    /* Adjust padding to account for thicker border */
+}
+
+.color-option-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+/* --- Size and Quantity Styling --- */
+.size-btn {
+    /* Overriding default Bootstrap outline button styles for a cleaner look */
+    color: #000000;
+    border-color: #e0e0e0;
+    background-color: #ffffff;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+}
+
+.size-btn:hover {
+    background-color: #f8f8f8;
+}
+
+.size-btn.active {
+    border-color: #000000;
+    /* Black border for active size */
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.quantity-input {
+    width: 150px;
+    /* Constrain the width of the quantity input */
+}
+
+.quantity-input .form-control {
+    border-left: none;
+    border-right: none;
+}
+
+/* Custom button overrides for cleaner look */
+.quantity-input .btn-outline-secondary {
+    color: #000000;
+    border-color: #e0e0e0;
+}
+
+/* Ensure the hr is styled to match the visual separator */
+.product-details hr {
+    border-top: 1px solid #e0e0e0;
+    opacity: 1;
+    /* Override Bootstrap's default opacity */
+}

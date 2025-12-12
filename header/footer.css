@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kulen';
+}
+.footer-bg {
+    border-radius: 5px 5px 0 0;
+    background-color: #000000 !important; 
+}
+
+.copyright-bg {
+    background-color: #d8c2d1 !important; 
+    color: #212529 !important; 
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.fab, .fas {
+    color: #fff; 
+}
+
+.payment-logo {
+    height: 50px; 
+    width: auto;
+    border-radius: 3px;
+    /* background-color: #fff;  */
+    padding: 2px 5px;
+}
+
+.icon-small {
+    height: 50px; 
+    width: auto;
+    
+}
+
+.list-unstyled a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: block;
+}
+
+.list-unstyled a:hover {
+    color: #adb5bd !important;
+}
+.list-unstyled li a {
+    color: #000000;
+}
+.container{
+    margin-bottom: 0;
+}

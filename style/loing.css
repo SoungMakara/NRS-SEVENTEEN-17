@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #707070; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tab Header (LOG IN / REGISTER) */
+.tab-header {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.tab-link {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #444;
+    transition: color 0.3s;
+}
+
+.tab-link.active {
+    color: #000; 
+    border-bottom: 2px solid #000; 
+}
+
+/* Input Fields and Groups */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0; 
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.password-group {
+    margin-bottom: 30px; 
+}
+
+/* Eye Icon Style */
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #444;
+}
+
+/* The Distinctive LOG IN Button */
+.login-button, .register-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #000000; 
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover, .register-button:hover {
+    background-color: #ff0080 ;
+}
+
+/* Form Visibility (Toggle between Login and Register) */
+.form-content {
+    display: none;
+}
+
+.form-content.active {
+    display: block;
+}

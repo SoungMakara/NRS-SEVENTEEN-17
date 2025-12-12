@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f7f7f7; 
+    font-family: 'kulen';
+}
+
+.short-sleeve-type-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    display: inline-block;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+
+.product-card {
+    background-color: #fff; 
+    padding-bottom: 10px; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image-container {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bookmark-icon {
+    position: absolute;
+    bottom: 5px; 
+    right: 5px; 
+    color: #333; 
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.product-details {
+    padding: 0 5px; 
+    margin-top: 10px;
+}
+
+.price-info {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+.discount-percent {
+    color: #ff0000; 
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.sale-price {
+    color: #ff0000; 
+    font-weight: bold;
+}
+
+.product-name {
+    font-size: 0.85rem;
+    color: #333;
+    margin-bottom: 0;
+}
